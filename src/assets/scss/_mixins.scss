@@ -1,0 +1,19 @@
+@mixin media($min: "", $max: "") {
+  $query: "";
+
+  @if $min != "" {
+    $query: "(min-width: #{map-get($breakpoints, $min)})";
+  }
+
+  @if $max != "" {
+    @if $query != "" {
+      $query: $query + " and (max-width: #{map-get($breakpoints, $max)})";
+    } @else {
+      $query: "(max-width: #{map-get($breakpoints, $max)})";
+    }
+  }
+
+  @media #{$query} {
+    @content;
+  }
+}

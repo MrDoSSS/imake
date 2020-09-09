@@ -1,0 +1,6 @@
+section.top.center-xs.middle-xs.flex
+  .logo
+    img src="~@i/logo-bg.png" alt=""
+  .mouse
+    button
+      img src="~@i/icons/mouse.svg"

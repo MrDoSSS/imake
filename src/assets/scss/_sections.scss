@@ -1,0 +1,57 @@
+section {
+  &.top {
+    position: relative;
+    background: radial-gradient(50% 50% at 50% 50%, #000000 8%, rgba(0, 0, 0, 0) 90%),
+      url("../img/first-bg.png") center / cover;
+
+    user-select: none;
+
+    @include media(gt-xs) {
+      margin-bottom: 120px;
+      min-height: 100vh;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 334px;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(10, 1, 27, 0) 25%, #0a011b 93%);
+
+      @include media("", gt-xs) {
+        height: 42px;
+      }
+    }
+
+    @include media("", gt-xs) {
+      padding: 60px 0;
+      .logo {
+        width: 186px;
+        height: 66px;
+      }
+    }
+
+    .mouse {
+      @include media("", gt-xs) {
+        display: none;
+      }
+
+      position: absolute;
+      bottom: 60px;
+      z-index: 1;
+    }
+  }
+
+  &.about {
+    margin-bottom: 30px;
+
+    .border-1 {
+      padding: 50px;
+
+      .lead {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

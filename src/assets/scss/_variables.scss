@@ -1,0 +1,13 @@
+$xs-breakpoint: 30em;
+$sm-breakpoint: 48em;
+$md-breakpoint: 64em;
+$lg-breakpoint: 75em;
+
+$breakpoints: (
+  xs: $xs-breakpoint,
+  gt-xs: $xs-breakpoint + 1em,
+  sm: $sm-breakpoint,
+  gt-sm: $sm-breakpoint + 1em,
+  md: $md-breakpoint,
+  gt-md: $md-breakpoint + 1em,
+);

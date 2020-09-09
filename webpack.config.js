@@ -8,8 +8,8 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
-          test: /\.(html)$/,
-          use: ['html-loader']
+          test: /\.slm$/,
+          use: ['html-loader', 'slm-loader']
         },
         {
           test: /\.(png|jpe?g|gif|svg)$/i,
@@ -46,9 +46,12 @@ module.exports = (env, argv) => {
       ]
     },
     resolve: {
-      extensions: ['.js', '.scss'],
+      extensions: ['.js', '.scss', '.slm'],
       alias: {
         '@': path.resolve(__dirname, 'src/'),
+        '@a': path.resolve(__dirname, 'src/assets/'),
+        '@i': path.resolve(__dirname, 'src/assets/img'),
+        '@s': path.resolve(__dirname, 'src/assets/scss'),
       }
     },
     entry: {
@@ -69,7 +72,7 @@ module.exports = (env, argv) => {
     plugins: [
       new HtmlWebpackPlugin({
         filename: 'index.html',
-        template: './src/index.html',
+        template: './src/views/index.slm',
         scriptLoading: 'defer',
         minify: true,
       })
