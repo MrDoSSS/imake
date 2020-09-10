@@ -33,11 +33,30 @@ img {
 }
 
 .container {
-  padding: 0 1rem;
   max-width: calc(1520px + 1em);
   width: 100% !important;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.relative {
+  position: relative;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-60 {
+  margin-bottom: 60px !important;
+}
+
+.mb-80 {
+  margin-bottom: 80px !important;
 }

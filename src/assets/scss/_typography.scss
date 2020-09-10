@@ -32,3 +32,30 @@ mark {
   background: none;
   color: #05ffff;
 }
+
+strong {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: square;
+  padding-left: 1.5rem;
+  font-size: 24px;
+  color: #05ffff;
+  margin: 0;
+
+  li {
+    max-width: 847px;
+
+    span {
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.2em;
+    }
+  }
+}
+
+p {
+  font-size: 18px;
+}

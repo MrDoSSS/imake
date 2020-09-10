@@ -1,0 +1,17 @@
+.border.first
+  .top
+    .start
+      .blot
+      .connector
+    .end
+      .burr
+  .left
+    .blot
+  .bottom
+    .start
+      .burr
+      .connector
+    .end
+      .blot
+  .right
+    .blot

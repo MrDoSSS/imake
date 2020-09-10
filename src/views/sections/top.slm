@@ -1,4 +1,4 @@
-section.top.center-xs.middle-xs.flex
+section.wide.top.center-xs.middle-xs.flex
   .logo
     img src="~@i/logo-bg.png" alt=""
   .mouse
