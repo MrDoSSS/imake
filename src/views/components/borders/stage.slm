@@ -1,0 +1,14 @@
+.border.stage
+  .top
+    .start
+      .connector
+    .end
+      .connector
+  .left
+    .connector.reverse
+    .burr
+    .blot
+    .connector.end
+  .bottom
+    .connector.reverse
+  .right

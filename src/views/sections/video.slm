@@ -1,0 +1,7 @@
+section.video#video
+  .container
+    h3.title.mb-60 Видео
+    .video-container
+      button.play data-target="video#last"
+      video#last
+        source src="~@/assets/video/imake.mp4" type="video/mp4"

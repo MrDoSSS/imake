@@ -2,16 +2,22 @@
   .top
     .start
       .blot
+        .first
+        .second
+        .third
       .connector
     .end
       .burr
+        .connector
   .left
     .blot
   .bottom
     .start
       .burr
+        .connector
       .connector
     .end
       .blot
+    .burr
   .right
     .blot

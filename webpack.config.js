@@ -1,5 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const TerserJSPlugin = require('terser-webpack-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 module.exports = (env, argv) => {
   return {
@@ -12,11 +15,11 @@ module.exports = (env, argv) => {
           use: ['html-loader', 'slm-loader']
         },
         {
-          test: /\.(png|jpe?g|gif|svg)$/i,
+          test: /\.(png|jpe?g|gif|svg|ttf|woff2|mp4)$/i,
           loader: 'file-loader',
           options: {
-            outputPath: 'img',
-            publicPath: 'img',
+            outputPath: 'assets',
+            publicPath: 'assets',
             esModule: false
           },
         },
@@ -24,7 +27,7 @@ module.exports = (env, argv) => {
           test: /\.(scss)$/,
           use: [
             {
-              loader: 'style-loader',
+              loader: MiniCssExtractPlugin.loader
             },
             {
               loader: 'css-loader',
@@ -75,7 +78,11 @@ module.exports = (env, argv) => {
         template: './src/views/index.slm',
         scriptLoading: 'defer',
         minify: true,
-      })
-    ]
+      }),
+      new MiniCssExtractPlugin()
+    ],
+    optimization: {
+      minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    }
   }
 }

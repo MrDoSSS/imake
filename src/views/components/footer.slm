@@ -1,1 +1,16 @@
 footer
+  .container.flex.between-xs.middle-xs
+    .logo
+      img src="~@i/logo.png"
+    .social.flex
+      a href="https://www.facebook.com/imake_imake-112809196757092/" target="_blank"
+        img src="~@i/icons/fb.svg"
+      a href="https://vk.com/imake2020" target="_blank"
+        img src="~@i/icons/vk.svg"
+      a href="https://www.instagram.com/imake_marafon/" target="_blank"
+        img src="~@i/icons/insta.svg"
+    .partners.flex.middle-xs
+      .partner-1
+        img src="~@i/partner-1.png"
+      .partner-2
+        img src="~@i/partner-2.png"

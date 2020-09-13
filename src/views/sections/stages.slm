@@ -1,0 +1,73 @@
+section.stages.mb-100#stages
+  .container
+    h2
+      mark Сейчас самое время
+    h3.title.mb-100 Этапы
+    .items
+      .stage
+        .row
+          .col-xs-12.col-sm-3.col-md-2.text-center.left
+            img src="~@i/icons/stage-1.svg"
+          .col-xs-12.col-sm-9.col-md-10.relative
+            = partial('../components/borders/stage')
+            .content
+              mark
+                strong 1 ЭТАП
+              .date
+                mark
+                  strong 20 сентября – 12 октября
+              p Виртуальный квест–конкурсный отбор новобранцев
+              p Краткий онлайн-курс начинающего изобретателя 17-18 октября
+              button.primary Я готов
+      .stage
+        .row
+          .col-xs-12.col-sm-3.col-md-2.text-center.left
+            img src="~@i/icons/stage-2.svg"
+          .col-xs-12.col-sm-9.col-md-10.relative
+            = partial('../components/borders/stage')
+            .content
+              mark
+                strong 2 ЭТАП
+              .date
+                mark
+                  strong 20 октября – 5 ноября
+              p Инженерные офлайн-интенсивы в городах 
+      .stage
+        .row
+          .col-xs-12.col-sm-3.col-md-2.text-center.left
+            img src="~@i/icons/stage-3.svg"
+          .col-xs-12.col-sm-9.col-md-10.relative
+            = partial('../components/borders/stage')
+            .content
+              mark
+                strong 3 ЭТАП
+              .date
+                mark
+                  strong 9 ноября – 31 декабря
+              p Конкурсный отбор легионеров для участия в IMAKE Camp 2021  
+      .stage
+        .row
+          .col-xs-12.col-sm-3.col-md-2.text-center.left
+            img src="~@i/icons/stage-4.svg"
+          .col-xs-12.col-sm-9.col-md-10.relative
+            = partial('../components/borders/stage')
+            .content
+              mark
+                strong 4 ЭТАП
+              .date
+                mark
+                  strong 2021 февраль-март
+              p Выездной научно-изобретательский лагерь IMAKE Camp
+      .stage
+        .row
+          .col-xs-12.col-sm-3.col-md-2.text-center.left
+            img src="~@i/icons/stage-5.svg"
+          .col-xs-12.col-sm-9.col-md-10.relative
+            = partial('../components/borders/stage')
+            .content
+              mark
+                strong 5 ЭТАП
+              .date
+                mark
+                  strong 2021 февраль-март
+              p Конкурс юных изобретателей IMAKE март -апрель  с последующим участием победителей в международных выставках с прототипами изобретений

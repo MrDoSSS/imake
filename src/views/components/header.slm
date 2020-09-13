@@ -1,2 +1,13 @@
 header.main
+  .logo
+    img src="~@i/logo.png"
   nav
+    ul.flex.middle-xs
+      li
+        a href="#about" О Лиге изобретателей
+      li
+        a href="#stages" Этапы
+      li
+        a href="#rating" Рейтинг
+      li
+        a href="#video" Видео

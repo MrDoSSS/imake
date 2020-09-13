@@ -1,4 +1,4 @@
-section.about
+section.about#about
   .container.relative.first
     = partial('../components/borders/first')
     .content

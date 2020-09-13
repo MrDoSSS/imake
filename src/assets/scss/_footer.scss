@@ -1,0 +1,59 @@
+footer {
+  padding: 82px 1rem;
+
+  @include media("", gt-sm) {
+    padding: 30px 1rem;
+
+    .logo {
+      width: 120px;
+      margin-bottom: 30px;
+    }
+
+    .social {
+      width: 100%;
+    }
+
+    .partners {
+      position: absolute;
+      right: 1rem;
+      flex-direction: column-reverse;
+
+      .partner-1,
+      .partner-2 {
+        width: 100% !important;
+        margin-right: 0 !important;
+      }
+
+      .partner-1 {
+        width: 110px !important;
+      }
+
+      .partner-2 {
+        text-align: right;
+      }
+    }
+  }
+
+  .social {
+    a {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .partners {
+    .partner-1 {
+      width: 150px;
+      height: 67px;
+      margin-right: 37px;
+    }
+
+    .partner-2 {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

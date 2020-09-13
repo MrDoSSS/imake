@@ -1,1 +1,2 @@
 import '@s'
+import './videoControl'

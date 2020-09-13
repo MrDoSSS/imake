@@ -9,4 +9,7 @@ html lang="ru"
     main
       = partial('sections/top')
       = partial('sections/about')
+      = partial('sections/stages')
+      = partial('sections/rating')
+      = partial('sections/video')
     = partial('components/footer')
