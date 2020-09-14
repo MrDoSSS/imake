@@ -19,7 +19,7 @@ module.exports = (env, argv) => {
           loader: 'file-loader',
           options: {
             outputPath: 'assets',
-            publicPath: 'assets',
+            publicPath: env.NODE_ENV === 'development' ? 'assets' : '/public/master/assets',
             esModule: false
           },
         },
@@ -64,7 +64,7 @@ module.exports = (env, argv) => {
       filename: '[name].bundle.js',
       chunkFilename: '[name].chunk.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: '/',
+      publicPath: env.NODE_ENV === 'development' ? '/' : '/public/master/',
     },
     devServer: {
       contentBase: path.resolve(__dirname, 'dist'),

@@ -6,8 +6,17 @@ header.main
       li
         a href="#about" О Лиге изобретателей
       li
-        a href="#stages" Этапы
+        a href="#stages" Квест «Изобретаниум»
       li
-        a href="#rating" Рейтинг
+        a href="#rating" IMAKE Camp
       li
         a href="#video" Видео
+  .right
+    ul.flex.middle-xs
+      li
+        / If not signed in
+        a href="#" Вход
+
+        / If signed in
+        a.icon href="#"
+          img src="~@i/icons/profile.svg"

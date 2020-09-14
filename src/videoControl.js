@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('video#main').play()
+
   const videoBtns = document.querySelectorAll('button.play')
 
   videoBtns.forEach(btn => {

@@ -1,8 +1,3 @@
 section.wide.top.center-xs.middle-xs.flex
-  video autoplay="" muted="" loop=""
+  video#main muted="" loop=""
     source src="~@/assets/video/imake.mp4" type="video/mp4"
-  .logo
-    img src="~@i/logo-bg.png" alt=""
-  / .mouse
-  /   a.button href="#about"
-  /     img src="~@i/icons/mouse.svg"
