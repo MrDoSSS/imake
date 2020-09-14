@@ -11,6 +11,6 @@ footer
         img src="~@i/icons/insta.svg"
     .partners.flex.middle-xs
       .partner-1
-        img src="~@i/partner-1.png"
+        img src="~@i/partner-1.svg"
       .partner-2
-        img src="~@i/partner-2.png"
+        img src="~@i/partner-2.svg"
