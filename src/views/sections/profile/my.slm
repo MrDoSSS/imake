@@ -1,0 +1,44 @@
+= partial('../../components/borders/first')
+
+.content.my
+  .top
+    .avatar
+      img src="~@i/profile/avatar.png"
+      button
+        img src="~@i/profile/icons/camera.svg"
+    .info
+      ul
+        li
+          .icon
+            img src="~@i/profile/icons/profile.svg"
+          .text Иван Иванов
+        li
+          .icon
+            img src="~@i/profile/icons/star.svg"
+          .text 251 балл
+        li
+          .icon
+            img src="~@i/profile/icons/heart.svg"
+          .text Уровень 2
+  .achievements
+    h2 Достижения сезона 2020 - 2021
+    .items.row
+      .col-xs-6.col-sm-4
+        .item
+          img src="~@i/profile/achievement.png"
+      .col-xs-6.col-sm-4
+        .item
+          img src="~@i/profile/achievement.png"
+  .achievements
+    h2 Достижения сезона 2019 - 2020
+    .items.row
+      .col-xs-6.col-sm-4
+        .item
+          img src="~@i/profile/achievement.png"
+      .col-xs-6.col-sm-4
+        .item
+          img src="~@i/profile/achievement.png"
+      .col-xs-6.col-sm-4
+        .item
+          img src="~@i/profile/achievement.png"
+  a.link href="#" Скачать общий рейтинг

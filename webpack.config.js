@@ -12,7 +12,14 @@ module.exports = (env, argv) => {
       rules: [
         {
           test: /\.slm$/,
-          use: ['html-loader', 'slm-loader']
+          use: [
+            {
+              loader: 'html-loader',
+            },
+            {
+              loader: 'slm-loader',
+            }
+          ]
         },
         {
           test: /\.(png|jpe?g|gif|svg|ttf|woff2|mp4)$/i,
@@ -58,7 +65,8 @@ module.exports = (env, argv) => {
       }
     },
     entry: {
-      main: './src/index.js'
+      // main: './src/index.js',
+      profile: './src/profile.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -73,11 +81,17 @@ module.exports = (env, argv) => {
       historyApiFallback: true
     },
     plugins: [
+      // new HtmlWebpackPlugin({
+      //   filename: 'index.html',
+      //   template: './src/views/index.slm',
+      //   scriptLoading: 'defer',
+      //   chunks: ['main']
+      // }),
       new HtmlWebpackPlugin({
-        filename: 'index.html',
-        template: './src/views/index.slm',
+        filename: 'profile.html',
+        template: './src/views/profile.slm',
         scriptLoading: 'defer',
-        minify: true,
+        chunks: ['profile']
       }),
       new MiniCssExtractPlugin()
     ],

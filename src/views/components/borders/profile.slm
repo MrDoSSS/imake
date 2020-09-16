@@ -1,0 +1,15 @@
+.border
+  .top
+    .left
+      .blot
+      .connector
+    .right
+      .burr
+  .right
+    .blot
+  .bottom
+    .left
+      .burr
+      .conntector
+  .left
+    .blot

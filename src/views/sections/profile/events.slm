@@ -1,0 +1,39 @@
+.content.events
+  .activity.row.between-xs
+    .col-xs-12.col-sm-6
+      a.item href="#"
+        .icon
+          img src="~@i/icons/stage-1.svg"
+        h3.title Активность 1
+        .text Текст с описанием, что  это крутая активность и тут можно выиграть еще одну медальку в текущий сезон.
+    .col-xs-12.col-sm-6
+      a.item href="#"
+        .icon
+          img src="~@i/icons/stage-2.svg"
+        h3.title Активность 2
+        .text Текст с описанием, что  это крутая еще более крутая  активность, чем  1 и тут можно выиграть не только медальку.
+    .col-xs-12.col-sm-6
+      a.item href="#"
+        .icon
+          img src="~@i/icons/stage-3.svg"
+        h3.title Активность 3
+        .text Текст о том, что эта активность нравится всем и вся
+    .col-xs-12.col-sm-6
+      a.item href="#"
+        .icon
+          img src="~@i/icons/stage-4.svg"
+        h3.title Активность 4
+        .text Текст о том, что тут можно запустить ракету в космос с Илоном Маском (онлайн)
+  .news
+    h2 Немного новостей о IMAKE
+    .row
+      .col-xs-12.col-sm-6
+        a.item href="#"
+          .thumb
+            img src="~@i/profile/news-1.png"
+          h3.title В Иркутском политехе стартовал набор на новую магистерскую программу «Передовые производственные технологии»
+      .col-xs-12.col-sm-6
+        a.item href="#"
+          .thumb
+            img src="~@i/profile/news-2.png"
+          h3.title Адам Франк: «Что может быть важнее вопроса о жизни в других мирах?»

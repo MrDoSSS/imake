@@ -8,6 +8,6 @@ app.get('/ping', function (req, res) {
   return res.send('pong')
 })
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'))
+  res.sendFile(path.join(__dirname, 'dist', 'profile.html'))
 })
 app.listen(port)
